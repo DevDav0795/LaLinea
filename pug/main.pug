@@ -2,11 +2,11 @@
     .content_trip
         .type_trip.option_trip
             label(for='Sencillo') Sencillo <br>
-                input(type="radio", name="type_trip", id="Sencillo", value="Sencillo", checked) 
+                input(type="radio", name="type_trip", id="Sencillo", value="Sencillo" ,onchange="SelectTypeTrip()") 
             label(for='Redondo') Redondo <br>
-                input(type="radio", name="type_trip", id="Redondo", value="Redondo")
+                input(type="radio", name="type_trip", id="Redondo", value="Redondo",onchange="SelectTypeTrip()", checked)
         .places_trip.option_trip
-            label(for='origen') Origen <br>
+            label(for='origen') Origen <br> 
                 select
                     option(value="origen") ORIGEN
                     option(value="ALLE") SAN MIGUEL ALLENDE
@@ -25,12 +25,15 @@
                     option(value="TECO") TECOMAN
                     option(value="TLIG") TREN LIGERO
         .date_trip.option_trip
-            label(for='salida') Salida <br>
-                input(type="date", id="salida", value="salida", checked) 
-            label(for='regreso') Regreso <br>
-                input(type="date", id="regreso", value="regreso")
-            label(for='Abierto') Boleto Abierto
-                input(type="checkbox", id="Abierto", value="Abierto")
+            div(id="divsalida")
+                label(for='salida') Salida <br>
+                    input(type="date", value="salida") 
+            div(id="divregreso")
+                label(for='regreso') Regreso <br>
+                    input(type="date", id="regreso", value="regreso")
+            div(id="divabierto")
+                label(for='abierto') Boleto Abierto
+                    input(type="checkbox", id="abierto", value="Abierto" ,onclick="DateTrip()")
         .promotion_trip.option_trip
             .passenger_trip
                 label(for='adulto') Adultos <br>

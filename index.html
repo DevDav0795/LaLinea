@@ -15,14 +15,14 @@
       <div class="content_trip">
         <div class="type_trip option_trip">
           <label for="Sencillo">Sencillo <br>
-            <input type="radio" name="type_trip" id="Sencillo" value="Sencillo" checked>
+            <input type="radio" name="type_trip" id="Sencillo" value="Sencillo" onchange="SelectTypeTrip()">
           </label>
           <label for="Redondo">Redondo <br>
-            <input type="radio" name="type_trip" id="Redondo" value="Redondo">
+            <input type="radio" name="type_trip" id="Redondo" value="Redondo" onchange="SelectTypeTrip()" checked>
           </label>
         </div>
         <div class="places_trip option_trip">
-          <label for="origen">Origen <br>
+          <label for="origen">Origen <br> 
             <select>
               <option value="origen">ORIGEN</option>
               <option value="ALLE">SAN MIGUEL ALLENDE</option>
@@ -46,15 +46,21 @@
           </label>
         </div>
         <div class="date_trip option_trip">
-          <label for="salida">Salida <br>
-            <input type="date" id="salida" value="salida" checked>
-          </label>
-          <label for="regreso">Regreso <br>
-            <input type="date" id="regreso" value="regreso">
-          </label>
-          <label for="Abierto">Boleto Abierto
-            <input type="checkbox" id="Abierto" value="Abierto">
-          </label>
+          <div id="divsalida">
+            <label for="salida">Salida <br>
+              <input type="date" value="salida">
+            </label>
+          </div>
+          <div id="divregreso">
+            <label for="regreso">Regreso <br>
+              <input type="date" id="regreso" value="regreso">
+            </label>
+          </div>
+          <div id="divabierto">
+            <label for="abierto">Boleto Abierto
+              <input type="checkbox" id="abierto" value="Abierto" onclick="DateTrip()">
+            </label>
+          </div>
         </div>
         <div class="promotion_trip option_trip">
           <div class="passenger_trip">
@@ -73,5 +79,6 @@
       </div>
     </div>
     <div class="footer"></div>
+    <script src="./js/script.js"></script>
   </body>
 </html>
