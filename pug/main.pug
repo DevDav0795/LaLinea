@@ -7,7 +7,7 @@
                 input(type="radio", name="type_trip", id="Redondo", value="Redondo",onchange="SelectTypeTrip()", checked)
         .places_trip.option_trip
             label(for='origen') Origen <br> 
-                select
+                select(id="origen")
                     option(value="origen") ORIGEN
                     option(value="ALLE") SAN MIGUEL ALLENDE
                     option(value="GUZM") CIUDAD GUZMAN
@@ -16,7 +16,7 @@
                     option(value="TECO") TECOMAN
                     option(value="TLIG") TREN LIGERO
             label(for='destino') Destino <br>
-                select
+                select(id="destino")
                     option(value="destino") DESTINO
                     option(value="ALLE") SAN MIGUEL ALLENDE
                     option(value="GUZM") CIUDAD GUZMAN
