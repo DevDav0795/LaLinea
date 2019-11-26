@@ -20,8 +20,8 @@ body{
 }
 
 .header__img{
-    height: 75px; /*altura del logotipo*/
-    width: 250px; /*ancho del logotipo*/
+    height: 50px; /*altura del logotipo*/
+    /*width: 190px; /*ancho del logotipo*/
     padding: 10px 30px; /* arriba,abajo / izquierda,derecha*/
 }
 
