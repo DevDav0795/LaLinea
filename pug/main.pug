@@ -1,3 +1,42 @@
 .main
-    .content
-    
+    .content_trip
+        .type_trip.option_trip
+            label(for='Sencillo') Sencillo <br>
+                input(type="radio", name="type_trip", id="Sencillo", value="Sencillo", checked) 
+            label(for='Redondo') Redondo <br>
+                input(type="radio", name="type_trip", id="Redondo", value="Redondo")
+        .places_trip.option_trip
+            label(for='origen') Origen <br>
+                select
+                    option(value="origen") ORIGEN
+                    option(value="ALLE") SAN MIGUEL ALLENDE
+                    option(value="GUZM") CIUDAD GUZMAN
+                    option(value="GDLJ") GUADALAJARA, JAL
+                    option(value="MANZ") MANZANILLO, COL
+                    option(value="TECO") TECOMAN
+                    option(value="TLIG") TREN LIGERO
+            label(for='destino') Destino <br>
+                select
+                    option(value="destino") DESTINO
+                    option(value="ALLE") SAN MIGUEL ALLENDE
+                    option(value="GUZM") CIUDAD GUZMAN
+                    option(value="GDLJ") GUADALAJARA, JAL
+                    option(value="MANZ") MANZANILLO, COL
+                    option(value="TECO") TECOMAN
+                    option(value="TLIG") TREN LIGERO
+        .date_trip.option_trip
+            label(for='salida') Salida <br>
+                input(type="date", id="salida", value="salida", checked) 
+            label(for='regreso') Regreso <br>
+                input(type="date", id="regreso", value="regreso")
+            label(for='Abierto') Boleto Abierto
+                input(type="checkbox", id="Abierto", value="Abierto")
+        .promotion_trip.option_trip
+            .passenger_trip
+                label(for='adulto') Adultos <br>
+                    input(type="number", id="adulto", placeholder=0) 
+                label(for='ninos') Niños <br>
+                    input(type="number", id="ninos", placeholder=0)
+                label(for='inapam') *INAPAM <br>
+                    input(type="number", id="inapam", placeholder=0)
+            button.siguiente Consultar horarios

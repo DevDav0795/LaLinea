@@ -12,7 +12,65 @@
       <div class="header_social_media"><a href="/"><img class="socialMedia_img" src="./imagenes/ico-twitter.png" alt="twitter"></a><a href="/"><img class="socialMedia_img" src="./imagenes/ico-facebook.png" alt="facebook"></a><a href="/"><img class="socialMedia_img" src="./imagenes/ico-youtube.png" alt="youtube"></a></div>
     </header>
     <div class="main">
-      <div class="content"></div>
+      <div class="content_trip">
+        <div class="type_trip option_trip">
+          <label for="Sencillo">Sencillo <br>
+            <input type="radio" name="type_trip" id="Sencillo" value="Sencillo" checked>
+          </label>
+          <label for="Redondo">Redondo <br>
+            <input type="radio" name="type_trip" id="Redondo" value="Redondo">
+          </label>
+        </div>
+        <div class="places_trip option_trip">
+          <label for="origen">Origen <br>
+            <select>
+              <option value="origen">ORIGEN</option>
+              <option value="ALLE">SAN MIGUEL ALLENDE</option>
+              <option value="GUZM">CIUDAD GUZMAN</option>
+              <option value="GDLJ">GUADALAJARA, JAL</option>
+              <option value="MANZ">MANZANILLO, COL</option>
+              <option value="TECO">TECOMAN</option>
+              <option value="TLIG">TREN LIGERO</option>
+            </select>
+          </label>
+          <label for="destino">Destino <br>
+            <select>
+              <option value="destino">DESTINO</option>
+              <option value="ALLE">SAN MIGUEL ALLENDE</option>
+              <option value="GUZM">CIUDAD GUZMAN</option>
+              <option value="GDLJ">GUADALAJARA, JAL</option>
+              <option value="MANZ">MANZANILLO, COL</option>
+              <option value="TECO">TECOMAN</option>
+              <option value="TLIG">TREN LIGERO</option>
+            </select>
+          </label>
+        </div>
+        <div class="date_trip option_trip">
+          <label for="salida">Salida <br>
+            <input type="date" id="salida" value="salida" checked>
+          </label>
+          <label for="regreso">Regreso <br>
+            <input type="date" id="regreso" value="regreso">
+          </label>
+          <label for="Abierto">Boleto Abierto
+            <input type="checkbox" id="Abierto" value="Abierto">
+          </label>
+        </div>
+        <div class="promotion_trip option_trip">
+          <div class="passenger_trip">
+            <label for="adulto">Adultos <br>
+              <input type="number" id="adulto" placeholder="0">
+            </label>
+            <label for="ninos">Niños <br>
+              <input type="number" id="ninos" placeholder="0">
+            </label>
+            <label for="inapam">*INAPAM <br>
+              <input type="number" id="inapam" placeholder="0">
+            </label>
+          </div>
+          <button class="siguiente">Consultar horarios</button>
+        </div>
+      </div>
     </div>
     <div class="footer"></div>
   </body>
