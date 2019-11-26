@@ -1,0 +1,64 @@
+*{ /*Resetea valores por defecto*/
+    margin: 0px;
+}
+
+body{
+    height: 100vh; /* altura del 100% de la página */
+    background-color: #f6f6f6;
+}
+
+/*************HEADER**********************/
+.header{
+    display: flex;
+    justify-content: space-around; 
+    /*Alineación horizontal (logotipo izquierda, social_media derecha)*/
+    align-items: flex-end;
+    /*Alineación vertical*/
+    height: 12%;
+    width: 100%; /*todo el ancho de la página;*/
+    background-color: white
+}
+
+.header__img{
+    height: 75px; /*altura del logotipo*/
+    width: 250px; /*ancho del logotipo*/
+    padding: 10px 30px; /* arriba,abajo / izquierda,derecha*/
+}
+
+.header_social_media{
+    padding: 10px 30px; /* arriba,abajo / izquierda,derecha*/
+    width: 200px; /*ancho del contenedor*/
+    display: flex;
+    justify-content: space-between;
+    /*Alineación horizontal (izquierda, centro, derecha)*/
+}
+
+/********************MAIN**********************/
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 76%;
+    width: 100%;
+    background-image: url("../imagenes/banner.jpg");
+    background-size: auto;
+    background-position: center;
+}
+.content{
+    height: 300px;
+    width: 945px;
+    background-image: url("../imagenes/boleto.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+
+}
+
+/********************Footer**********************/
+
+.footer{
+    height: 12%;
+    width: 100%; /*todo el ancho de la página;*/
+    background-color: white
+}

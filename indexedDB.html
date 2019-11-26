@@ -109,12 +109,9 @@
             
             function loadAll() {
                 
-                var active = dataBase.result;
-                var data = active.transaction(["people"], "readonly");
+                var db = dataBase.result;
+                var data = db.transaction(["people"], "readonly");
                 var object = data.objectStore("people");
-
-                // var dataCity = active.transaction(["cities"], "readonly");
-                // var objectCity = dataCity.objectStore("cities");
                 
                 var elements = [];
                 // var cities = [];
@@ -153,39 +150,31 @@
                     document.querySelector("#elementsList").innerHTML = outerHTML;
                 };
 
-                // objectCity.openCursor().onsuccess = function (e) {
-                    
-                //     var result = e.target.result;
-                    
-                //     if (result === null) {
-                //         return;
-                //     }
-                    
-                //     cities.push(result.value);
-                //     result.continue();
-                    
-                // };
+                var dataCities = db.transaction(["cities"], "readonly");
+                var objectCity = dataCities.objectStore("cities");
 
-                // dataCity.oncomplete = function() {
-                //     var comboorigin = '';
-
-                    // for (var city in cities) {
-                        
-                    //     comboorigin += '\n\
-                    //     <tr>\n\
-                    //         <td>' + dataCity[city].code + '</td>\n\
-                    //         <td>' + dataCity[city].name + '</td>\n\
-                    //     </tr>';                        
-                    // }
+                objectCity.openCursor().onsuccess = function (e) {
                     
-                //     console.log(dataCity);
+                    var cursor = e.target.result;
+                    var comboorigin = '';
 
-                //     var varible=dataCity
+                    if (cursor) {
+                        comboorigin += '\n\
+                        <tr>\n\
+                            <td>' + cursor.value.code + '</td>\n\
+                            <td>' + cursor.value.name + '</td>\n\
+                        </tr>';                        
+                    }
 
-                //     document.querySelector("#comboorigin").innerHTML = comboorigin;
-                // }
+                    document.querySelector("#comboorigin").innerHTML = comboorigin;
+                       
+                    }
+                    
+                };
+
+
                 
-            }
+            
             
             function loadAllByName() {
                 
