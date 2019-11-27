@@ -8,32 +8,19 @@
         .places_trip.option_trip
             label(for='origen') Origen <br> 
                 select(id="origen")
-                    option(value="origen") ORIGEN
-                    option(value="ALLE") SAN MIGUEL ALLENDE
-                    option(value="GUZM") CIUDAD GUZMAN
-                    option(value="GDLJ") GUADALAJARA, JAL
-                    option(value="MANZ") MANZANILLO, COL
-                    option(value="TECO") TECOMAN
-                    option(value="TLIG") TREN LIGERO
             label(for='destino') Destino <br>
                 select(id="destino")
-                    option(value="destino") DESTINO
-                    option(value="ALLE") SAN MIGUEL ALLENDE
-                    option(value="GUZM") CIUDAD GUZMAN
-                    option(value="GDLJ") GUADALAJARA, JAL
-                    option(value="MANZ") MANZANILLO, COL
-                    option(value="TECO") TECOMAN
-                    option(value="TLIG") TREN LIGERO
+                    option(value="Destino") Destino
         .date_trip.option_trip
             div(id="divsalida")
                 label(for='salida') Salida <br>
-                    input(type="date", value="salida") 
+                    input(type="date", id="salida",value="salida" required) 
             div(id="divregreso")
                 label(for='regreso') Regreso <br>
                     input(type="date", id="regreso", value="regreso")
             div(id="divabierto")
                 label(for='abierto') Boleto Abierto
-                    input(type="checkbox", id="abierto", value="Abierto" ,onclick="DateTrip()")
+                    input(type="checkbox", id="abierto", value="abierto", OnClick="DateTrip()")
         .promotion_trip.option_trip
             .passenger_trip
                 label(for='adulto') Adultos <br>
@@ -42,4 +29,4 @@
                     input(type="number", id="ninos", placeholder=0)
                 label(for='inapam') *INAPAM <br>
                     input(type="number", id="inapam", placeholder=0)
-            button.siguiente Consultar horarios
+            button.siguiente(onclick="add()") Elegir horario

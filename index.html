@@ -23,32 +23,17 @@
         </div>
         <div class="places_trip option_trip">
           <label for="origen">Origen <br> 
-            <select id="origen">
-              <option value="origen">ORIGEN</option>
-              <option value="ALLE">SAN MIGUEL ALLENDE</option>
-              <option value="GUZM">CIUDAD GUZMAN</option>
-              <option value="GDLJ">GUADALAJARA, JAL</option>
-              <option value="MANZ">MANZANILLO, COL</option>
-              <option value="TECO">TECOMAN</option>
-              <option value="TLIG">TREN LIGERO</option>
-            </select>
+            <select id="origen"></select>
           </label>
           <label for="destino">Destino <br>
             <select id="destino">
-              <option value="destino">DESTINO</option>
-              <option value="ALLE">SAN MIGUEL ALLENDE</option>
-              <option value="GUZM">CIUDAD GUZMAN</option>
-              <option value="GDLJ">GUADALAJARA, JAL</option>
-              <option value="MANZ">MANZANILLO, COL</option>
-              <option value="TECO">TECOMAN</option>
-              <option value="TLIG">TREN LIGERO</option>
             </select>
           </label>
         </div>
         <div class="date_trip option_trip">
           <div id="divsalida">
             <label for="salida">Salida <br>
-              <input type="date" value="salida">
+              <input type="date" id="salida" value="salida" required>
             </label>
           </div>
           <div id="divregreso">
@@ -58,7 +43,7 @@
           </div>
           <div id="divabierto">
             <label for="abierto">Boleto Abierto
-              <input type="checkbox" id="abierto" value="Abierto" onclick="DateTrip()">
+              <input type="checkbox" id="abierto" value="abierto" OnClick="DateTrip()">
             </label>
           </div>
         </div>
@@ -74,12 +59,12 @@
               <input type="number" id="inapam" placeholder="0">
             </label>
           </div>
-          <button class="siguiente">Consultar horarios</button>
+          <button class="siguiente" onclick="add()">Elegir horario</button>
         </div>
       </div>
     </div>
     <div class="footer"></div>
     <script src="./js/indexedDB.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js"> </script>
   </body>
 </html>

@@ -6,7 +6,8 @@
         <script type="text/javascript">
             var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
             var dataBase = null;
-            var dataCity = [{code:'GDL',name:'Guadalajara'}];
+            var dataCity = [{code:'GDL',name:'Guadalajara'},
+                            {code:'Col',name:'Colima'}];
             
             function startDB() {
                 
@@ -145,6 +146,9 @@
                             </td>\n\
                         </tr>';                        
                     }
+
+                    console.log(elements);
+                    
                     
                     elements = [];
                     document.querySelector("#elementsList").innerHTML = outerHTML;
