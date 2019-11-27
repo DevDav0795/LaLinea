@@ -1,0 +1,55 @@
+.registro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 76%;
+    width: 100%;
+    box-sizing:border-box;
+    padding: 40px 0px;
+}
+
+.formulario{
+    height: 100%;
+    width: 700px ;
+    background-color: #f0f0f0;
+}
+
+.formulario_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario_tittle{
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #035d66;
+    color: white;
+    font-size: 30px;
+}
+
+
+
+
+.formulario_name,
+.formulario_email,
+.formulario_confirm_password,
+.formulario_cell,
+.formulario_terminos{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.formulario_content input{
+    width: 300px;
+}
+
+.formulario_content label{
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.label_terminos{
+    text-align: center;
+}

@@ -2,6 +2,11 @@
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 body{
     height: 100vh; /* altura del 100% de la página */
     background-color: #f6f6f6;

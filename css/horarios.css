@@ -22,6 +22,8 @@
 .detalles_origen,
 .detalles_destino,
 .detalles_adultos,
+.detalles_salida,
+.detalles_regreso,
 .detalles_ninos,
 .detalles_INAPAM,
 td{
@@ -41,12 +43,14 @@ th{
 }
 
 .detalles{
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 220px ;
     background-color: #f0f0f0;
 }
 
-.detalles_type{
-
+.continuar{
+    margin: 10px;
 }
 
