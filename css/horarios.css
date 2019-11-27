@@ -1,0 +1,52 @@
+.horarios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 76%;
+    width: 100%;
+    box-sizing:border-box;
+    padding: 40px 0px;
+}
+
+.corridas{
+    height: 100%;
+    width: 700px ;
+    background-color: #f0f0f0;
+}
+
+.corridas table{
+    width: 100%;
+}
+
+.detalles_type,
+.detalles_origen,
+.detalles_destino,
+.detalles_adultos,
+.detalles_ninos,
+.detalles_INAPAM,
+td{
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #dadada;
+    margin: 1px solid #FFF;
+}
+
+.detalles_title,
+.detalles_total,
+th{
+    padding: 10px 0px;
+    background-color: #035d66;
+    color: white;
+    text-align: center;
+}
+
+.detalles{
+    height: 100%;
+    width: 220px ;
+    background-color: #f0f0f0;
+}
+
+.detalles_type{
+
+}
+
