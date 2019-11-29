@@ -1,0 +1,34 @@
+.tarjeta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 76%;
+    width: 100%;
+    box-sizing:border-box;
+    padding: 40px 0px;
+}
+
+.formulario_tarjeta,
+.formulario_name,
+.formulario_code
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+#code{
+    width: 30px;
+}
+
+.formulario_expiracion{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0px;
+}
+
+.anio,
+.mes{
+    padding: 0px 20px;
+}
+

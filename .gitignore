@@ -1,2 +1,2 @@
-*pug
-/pug
+*.pug
+pug/

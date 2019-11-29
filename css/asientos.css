@@ -44,3 +44,25 @@
     justify-content: space-evenly;
     padding: 10px 0px;
 }
+
+.detalles_type,
+.detalles_origen,
+.detalles_destino,
+.detalles_adultos,
+.detalles_salida,
+.detalles_regreso,
+.detalles_ninos,
+.detalles_INAPAM,
+.detalle_numasiento {
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #dadada;
+    margin: 1px solid #FFF;
+}
+
+.detalles_asientos{
+    padding: 10px 0px;
+    background-color: #035d66;
+    color: white;
+    text-align: center;
+}
