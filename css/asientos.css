@@ -1,0 +1,46 @@
+.asientos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 76%;
+    width: 100%;
+    box-sizing:border-box;
+    padding: 40px 0px;
+}
+
+.autobus{
+    height: 100%;
+    width: 700px ;
+    background-color: #f0f0f0;
+}
+
+.detalles{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 220px ;
+    background-color: #f0f0f0;
+}
+
+.planta_baja,
+.planta_alta{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.plata_alta_title,
+.plata_baja_title{
+    padding: 10px 0px;
+    background-color: #035d66;
+    color: white;
+}
+.seleccionAsiento2,
+.seleccionAsiento3,
+.seleccionAsiento1{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 10px 0px;
+}
