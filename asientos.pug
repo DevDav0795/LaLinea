@@ -1,11 +1,10 @@
-//- pug -w --pretty index.pug
+//- pug -w --pretty asientos.pug
 doctype html
 html(lang="en")
   include pug/head.pug
-  body(onload="startDB()")
+  body
     include pug/header.pug  
-    include pug/main.pug 
+    include pug/asientos.pug
     include pug/footer.pug 
     script(src="./js/indexedDB.js")
     script(src="./js/script.js") 
-    

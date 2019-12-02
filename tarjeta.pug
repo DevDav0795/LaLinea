@@ -1,0 +1,18 @@
+//- pug -w --pretty tarjeta.pug
+doctype html
+html(lang="en")
+  include pug/head.pug
+  body
+    include pug/header.pug  
+    include pug/tarjeta.pug
+    include pug/footer.pug 
+    .overlay(id="overlay")
+    .modal(id="modal")
+      h1 Boleto de Camión
+      .modal-content
+        img(src="./imagenes/boleto.png",  width="170", height="256")
+        p Guadalajara - Colima
+      .modal-buttons
+        button.modal-btn(class="primary" id="hide-modal") Cerrar Modal
+    script(src="./js/indexedDB.js")
+    script(src="./js/script.js") 
