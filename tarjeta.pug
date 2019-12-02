@@ -10,8 +10,10 @@ html(lang="en")
     .modal(id="modal")
       h1 Boleto de Camión
       .modal-content
-        img(src="./imagenes/boleto.png",  width="170", height="256")
-        p Guadalajara - Colima
+        .type_trip
+        .places_trip
+        .date_trip
+        .promotion_trip
       .modal-buttons
         button.modal-btn(class="primary" id="hide-modal") Cerrar Modal
     script(src="./js/indexedDB.js")
