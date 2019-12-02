@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/registro.css">
     <link rel="stylesheet" href="./css/asientos.css">
     <link rel="stylesheet" href="./css/tarjeta.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <title>Camión pasajero</title>
   </head>
   <body>
@@ -67,11 +68,21 @@
             <label>Código de seguridad</label>
             <input type="password" name="codigo" placeholder="***" id="code">
           </div>
-          <button class="continuar"><a href="./tarjeta.html">Pagar e imprimir Boleto </a></button>
+          <button class="continuar" id="imprimirBoleto">Pagar e imprimir Boleto</button>
         </div>
       </div>
     </div>
     <div class="footer"></div>
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+      <h1>Boleto de Camión</h1>
+      <div class="modal-content"><img src="./imagenes/boleto.png" width="170" height="256">
+        <p>Guadalajara - Colima</p>
+      </div>
+      <div class="modal-buttons">
+        <button class="modal-btn primary" id="hide-modal">Cerrar Modal</button>
+      </div>
+    </div>
     <script src="./js/indexedDB.js"></script>
     <script src="./js/script.js"> </script>
   </body>

@@ -35,7 +35,8 @@
     /*transition: 300s ease-in;*/
     /*opacity: 0;*/
     /*visibility: hidden;*/
-    display: none;
+    
+    display: block /*none*/;
   }
   .overlay.active {
     /*opacity: 1;*/
@@ -50,7 +51,7 @@
     border-radius: .5em;
     text-align: center;
     z-index: 2;
-    transform: translateY(-3000px);
+    /*transform: translateY(-3000px);*/
     position: absolute;
     left: 0;
     right: 0;
