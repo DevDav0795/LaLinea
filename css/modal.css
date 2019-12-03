@@ -74,15 +74,35 @@
 
   }
   
-  .modal-content img {
-    width: 170px;
-    height: 256px;
-    object-fit: cover;
-    margin-right: 15px;
+  .type_trip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
-  .modal-content p {
-    align-self: center;
+
+  .places_trip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
+
+  .date_trip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .promotion_trip{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  
   /*@keyframes animationIn {*/
   @keyframes modalIn {
     0% {

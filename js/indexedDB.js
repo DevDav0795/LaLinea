@@ -1,10 +1,12 @@
 var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
 var dataBase = null;
+/*Array para llenar ciudades*/
 var dataCity = [{code:'ALLE',name:'SAN MIGUEL ALLENDE'}
                ,{code:'GUZM',name:'CIUDAD GUZMAN'}
                ,{code:'GDLJ',name:'GUADALAJARA, JAL'}
                ,{code:'MANZ',name:'MANZANILLO, COL'}
                ,{code:'TECO',name:'TECOMAN'}
+               ,{code:'COL',name:'COLIMA'}
                ,{code:'TLIG',name:'TREN LIGERO'}];
 
 function startDB() {
@@ -15,12 +17,8 @@ function startDB() {
     };
 
     dataBase.onsuccess = function (e) {
-        // alert('Database loaded');
+        // Cargar Opciones
         loadOptions();
-    };
-
-    dataBase.onerror = function (e) {
-        // alert('Error loading database');
     };
 }  
 
@@ -34,6 +32,18 @@ function loadOptions() {
         document.querySelector("#origen").innerHTML = options;
         document.querySelector("#destino").innerHTML = options;
 };
+
+// INICIO
+var $Sencillo = document.querySelector("#Sencillo").checked;
+var $Redondo = document.querySelector("#Redondo").checked;
+var $origen = document.querySelector("#origen").value;
+var $destino = document.querySelector("#destino").value;
+var $salida = document.querySelector("#salida").value;
+var $regreso = document.querySelector("#regreso").value;
+var $abierto = document.querySelector("#abierto").checked;
+var $adulto = document.querySelector("#adulto").value;
+var $ninos = document.querySelector("#ninos").value;
+var $inapam = document.querySelector("#inapam").value;
 
 function add() {
                 

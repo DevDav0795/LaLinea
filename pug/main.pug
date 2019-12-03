@@ -8,13 +8,14 @@
         .places_trip.option_trip
             label(for='origen') Origen <br> 
                 select(id="origen")
+                    option(value="Origen") Origen
             label(for='destino') Destino <br>
                 select(id="destino")
                     option(value="Destino") Destino
         .date_trip.option_trip
             div(id="divsalida")
                 label(for='salida') Salida <br>
-                    input(type="date", id="salida",value="salida" required) 
+                    input(type="date", id="salida",value='2019/12/02') 
             div(id="divregreso")
                 label(for='regreso') Regreso <br>
                     input(type="date", id="regreso", value="regreso")
