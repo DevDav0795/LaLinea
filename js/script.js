@@ -31,6 +31,7 @@ var horarios = document.getElementById("horarios");
 var tarjeta = document.getElementById("tarjeta");
 
 function selecthorario() {
+  add()
   main.classList.remove('active');
   horarios.classList.add('active');
 }
