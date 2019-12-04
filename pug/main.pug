@@ -1,4 +1,4 @@
-.main
+.main.active(id="main")
     .content_trip
         .type_trip.option_trip
             label(for='Sencillo') Sencillo <br>
@@ -30,5 +30,5 @@
                     input(type="number", id="ninos", placeholder=0)
                 label(for='inapam') *INAPAM <br>
                     input(type="number", id="inapam", placeholder=0)
-            button.siguiente(onclick="add()") 
-                a(href="./horarios.html") Eligir Horario
+            button.siguiente(onclick="selecthorario()") Eligir Horario
+                //- a(href="./horarios.html") Eligir Horario

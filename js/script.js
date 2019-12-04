@@ -23,5 +23,34 @@ function showModal() {
     modal.style.animation = 'modalIn .8s forwards';
     }
 
+var main = document.getElementById("main");
+var horarios = document.getElementById("horarios");
+var registro = document.getElementById("registro");
+var asientos = document.getElementById("asientos");
+var horarios = document.getElementById("horarios");
+var tarjeta = document.getElementById("tarjeta");
 
+function selecthorario() {
+  main.classList.remove('active');
+  horarios.classList.add('active');
+}
 
+function registrar() {
+  horarios.classList.remove('active');
+  registro.classList.add('active');
+}
+
+function selectasientos() {
+  registro.classList.remove('active');
+  asientos.classList.add('active');
+}
+
+function pay() {
+  asientos.classList.remove('active');
+  tarjeta.classList.add('active');
+}
+
+function salir() {
+  tarjeta.classList.remove('active');
+  main.classList.add('active');
+}

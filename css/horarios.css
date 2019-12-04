@@ -1,11 +1,15 @@
 .horarios{
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-evenly;
     height: 76%;
     width: 100%;
     box-sizing:border-box;
     padding: 40px 0px;
+}
+
+.horarios.active{
+    display: flex;
 }
 
 .corridas{
@@ -37,7 +41,7 @@ td{
 .detalles_total,
 th{
     padding: 10px 0px;
-    background-color: #035d66;
+    background-color: #0068FF;
     color: white;
     text-align: center;
 }

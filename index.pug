@@ -1,11 +1,34 @@
-//- pug -w --pretty index.pug
+//- pug -w --pretty tarjeta.pug
 doctype html
 html(lang="en")
   include pug/head.pug
-  body(onload="startDB()")
+  body
     include pug/header.pug  
     include pug/main.pug 
+    include pug/horarios.pug
+    include pug/registro.pug
+    include pug/asientos.pug
+    include pug/tarjeta.pug
     include pug/footer.pug 
-    script(src="./js/index.js")
+    .overlay(id="overlay")
+    .modal(id="modal")
+      h1 Boleto de Camión
+      .modal-content
+        .type_trip 
+          .type Viaje Sencillo
+          .passenger 1 Pasajero
+        .places_trip
+          .origin Origen: Guadalajara, Jal
+          .destination Destino: Colima, Col
+        .date_trip
+          .fecha Fecha: 2019-11-27
+          .hora Hora: 10:30pm
+          .asiento Asiento:07
+        .promotion_trip
+          .precio Subtotal $324
+          .iva IVA $16
+          .total Total $340
+      .modal-buttons
+        button.modal-btn(class="primary" id="hide-modal") Cerrar Modal
     script(src="./js/indexedDB.js")
-    
+    script(src="./js/script.js") 

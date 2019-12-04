@@ -1,11 +1,15 @@
 .asientos{
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-evenly;
     height: 76%;
     width: 100%;
     box-sizing:border-box;
     padding: 40px 0px;
+}
+
+.asientos.active{
+    display: flex;
 }
 
 .autobus{
@@ -33,7 +37,7 @@
 .plata_alta_title,
 .plata_baja_title{
     padding: 10px 0px;
-    background-color: #035d66;
+    background-color: #0068FF;
     color: white;
 }
 .seleccionAsiento2,
@@ -62,7 +66,7 @@
 
 .detalles_asientos{
     padding: 10px 0px;
-    background-color: #035d66;
+    background-color: #0068FF;
     color: white;
     text-align: center;
 }
