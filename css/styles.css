@@ -112,7 +112,14 @@ body{
 /********************Footer**********************/
 
 .footer{
+    display: flex;
     height: 12%;
     width: 100%; /*todo el ancho de la página;*/
-    background-color: white
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer img{
+    height: 20px;
 }
